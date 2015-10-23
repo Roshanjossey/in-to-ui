@@ -23,9 +23,9 @@
 <section class="form">
     form
     <form class="user-details">
-        <input type="text" class="input-boxes" placeholder="First Name">
-        <input type="text" class="input-boxes" placeholder="Last Name">
-        <textarea id="description" class="input-boxes" placeholder="Describe yourself" length="120"></textarea>
+        <i class="material-icons prefix">&#1F574;</i>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
     </form>
 </section>
 

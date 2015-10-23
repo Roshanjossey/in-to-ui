@@ -56,6 +56,10 @@ input {
     border-bottom: 1px solid rgb(0, 128, 128);
     box-shadow: 0 1px 0 0 rgb(0, 255, 255);
 }
+footer {
+    display: block;
+    clear: both;
+}
 textarea {
     display: block;
     overflow: auto;
@@ -76,9 +80,10 @@ textarea {
     width: 15%;
 }
 .form {
+    margin: 5px 20px;
     display: block;
     float: right;
-    width: 85%;
+    width: 80%;
 }
 header {
     background: rgb(32, 132, 192);

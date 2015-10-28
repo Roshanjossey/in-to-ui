@@ -48,3 +48,34 @@ table {
 body {
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+header {
+    background: #000;
+    width: 100%;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    clear: both;
+    border-top: 1px solid #9e9e9e;
+    padding-top: 20px;
+}
+.navigation {
+    width: 100%;
+}
+.navigation li {
+    background: #222;
+    float: left;
+    line-height: 4em;
+    padding: 0 10px;
+}
+.navigation a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.navigation img {
+    float: left;
+    background: #800;
+    padding: 12px;
+}

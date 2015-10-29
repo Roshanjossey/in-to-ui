@@ -140,7 +140,8 @@ footer {
     background-color: rgba(0,0,0,.5);
     background-repeat: repeat-x, repeat;
     box-sizing: border-box;
-    bottom: 5px;
+    top: 0px;
+    height: 99.5%;
 }
 .greet-text {
     color: #fff;
@@ -152,7 +153,6 @@ footer {
 .button {
     background: #b11;
     color: #fff;
-    /* clear: both; */
     position: absolute;
     top: 50%;
     left: 45%;

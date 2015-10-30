@@ -52,7 +52,7 @@ body {
 header {
     background: #222;
     width: 100%;
-    height: 4em;
+    height: 62px;
 }
 footer {
     background: #ddd;
@@ -63,32 +63,52 @@ footer {
     margin-left: auto;
 }
 h1 {
-    font-size: 66px;
+    font-size: 62px;
     line-height: 44px;
     font-weight: 100;
 }
 .navigation {
     width: 100%;
 }
-.navigation li {
+.navigation ul {
     background: #222;
     float: left;
-    line-height: 4em;
-    padding: 0 10px;
+    height: 62px;
+}
+.navigation li {
+    background: url("../img/header-nav-divider.png") right 50% no-repeat;
+    float: left;
+    line-height: 58px;
+    padding: 0 20px;
     box-sizing: border-box;
+    position: relative;
+    display: block;
+}
+.navigation li:last-child {
+    background: none;
+    color: #b13;
+    border-top: solid 4px;
+    display: block;
+    padding-top: 2px;
+}
+.navigation li:last-child  a {
+    background: none;
+    color: #b13;
+    display: block;
 }
 .navigation a {
     line-height: 4em;
     color: #fff;
-    font-size: 15px;
-    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: .05em; text-decoration: none;
 }
 .navigation a:hover {
     color: #b13; }
 .navigation img {
     float: left;
     background: #b13;
-    padding: 12px;
+    padding: 11px;
+    padding-left: 20px;
     display: block;
     height: auto;
 }
@@ -108,7 +128,8 @@ h1 {
 }
 @media all and (max-width: 1064px) {
     .navigation-links,
-    .contact-catchphrase {
+    .contact-catchphrase,
+    .contact-mail {
         display: none;
     }
     .menu-button {
@@ -204,11 +225,12 @@ h1 {
 }
 .greet-text {
     color: #fff;
-    padding-top: 15%;
+    padding-top: 21%;
 }
 
 .button {
-    background: #b11;
+    background: #b23;
+    font-size: 26px;
     color: #fff;
     position: absolute;
     top: 50%;
@@ -221,4 +243,22 @@ h1 {
 }
 .button:hover {
     background: #b23;
+}
+.arrow {
+    background: url("../img/down_arrow.png") left center no-repeat;
+    height: 14px;
+    width: 11px;
+    margin-left: 15px;
+    display: inline-block;
+}
+.breadcrumbs {
+    padding: 11px 62px;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: rgba(255,255,255,0.49);
+    position: absolute;
+    width: 100%;
+    z-index: 1050;
+    top: 62px;
+    color: #333;
+    font-size: 16px;
 }

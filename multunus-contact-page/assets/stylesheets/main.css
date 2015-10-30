@@ -46,7 +46,7 @@ table {
     border-spacing: 0;
 }
 body {
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 16px/22px  Helvetica, Arial, sans-serif;
     width: 100%;
 }
 header {
@@ -61,6 +61,11 @@ footer {
     clear: both;
     margin-right: auto;
     margin-left: auto;
+}
+h1 {
+    font-size: 66px;
+    line-height: 44px;
+    font-weight: 100;
 }
 .navigation {
     width: 100%;
@@ -79,8 +84,7 @@ footer {
     text-decoration: none;
 }
 .navigation a:hover {
-    color: #b13;
-}
+    color: #b13; }
 .navigation img {
     float: left;
     background: #b13;
@@ -89,6 +93,8 @@ footer {
     height: auto;
 }
 .navigation-links {
+    position: relative;
+    left: -122px;
     margin-left: 30px;
     display: block;
     height: auto;
@@ -109,13 +115,38 @@ footer {
         display: block;
     }
 }
-.contact-catchphrase {
-    float: right;
+.contact-catchphrase,
+.contact-mail {
+    position: absolute;
+    right: 0;
     color: #fff;
     font-size: 15px;
     background: #222;
     padding: 20px;
 }
+.contact-catchphrase span {
+    color: #b13;
+}
+/* Animation Part */
+@keyframes toggler {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    50% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes toggler {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    50% { opacity: 1; }
+    60% { opacity: 0; }
+    100% { opacity: 0; }
+}
+.contact-mail {
+    animation: toggler linear 8s;
+    animation-iteration-count: infinite;
+}
+/* Thats it for the animation */
 .copyright {
     clear: both;
     width: 60%;
@@ -173,8 +204,6 @@ footer {
 }
 .greet-text {
     color: #fff;
-    font-size: 50px;
-    font-weight: 500;
     padding-top: 15%;
 }
 

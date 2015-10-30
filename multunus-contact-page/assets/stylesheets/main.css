@@ -70,16 +70,44 @@ footer {
     float: left;
     line-height: 4em;
     padding: 0 10px;
+    box-sizing: border-box;
 }
 .navigation a {
+    line-height: 4em;
     color: #fff;
     font-size: 15px;
     text-decoration: none;
+}
+.navigation a:hover {
+    color: #b13;
 }
 .navigation img {
     float: left;
     background: #b13;
     padding: 12px;
+    display: block;
+    height: auto;
+}
+.navigation-links {
+    margin-left: 30px;
+    display: block;
+    height: auto;
+}
+.menu-button {
+    float: right;
+    display: none;
+}
+.menu-button img {
+    background: #222;
+}
+@media all and (max-width: 1064px) {
+    .navigation-links,
+    .contact-catchphrase {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
 }
 .contact-catchphrase {
     float: right;

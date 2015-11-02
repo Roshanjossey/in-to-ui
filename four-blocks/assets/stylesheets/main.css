@@ -59,8 +59,8 @@ body,
 .bottom-left,
 .bottom-right,
 .center {
-    height: 49%;
-    min-height: 49%;
+    height: 50%;
+    min-height: 50%;
 }
 .box-container {
     margin: 0 auto;
@@ -69,7 +69,8 @@ body,
 }
 .box {
     background: #6af;
-    width: 49%;
+    box-sizing: border-box;
+    width: 50%;
     display: inline-block;
     border: 1px solid;
     border-radius: 6px;
